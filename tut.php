@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+
     <?php
         echo("Hello World");
         echo "Hello World";
@@ -123,6 +124,31 @@
         echo("<br />");
         echo count($array);
         echo("<br />");
+        echo("<hr />");
+
+
+
+        echo("<h2>Associated Arrays</h2>");
+        $asArray = array("Jim"=>"A+", "Pam"=>"B-", "Oscar"=>"C+");
+        echo("<br />");
+        echo $asArray["Jim"];
+        echo("<br />");
+        echo count($asArray);
+        echo("<hr />");
+    ?>
+
+    <!--FOR ASSOCIATED ARRAYS-->
+
+    <form action="tut.php" method="post">
+        <input type="text" name="student" />
+        <input type="submit" />
+    </form>
+
+    <?php
+        $name = $_POST["student"];
+        $vote = $asArray[$_POST["student"]];
+        echo "<p>name student: $name, vote: $vote</p>";
+        echo("<hr />");
     ?>
 </body>
 </html>
