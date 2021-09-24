@@ -164,6 +164,16 @@
         };
         sayName("James", 25);
         echo("<hr />");
+
+
+
+        echo "<h2>Returns</h2>";
+        function cube($num) {
+            return $num * $num * $num;
+        };
+        $res = cube(4);
+        echo $res;
+        echo("<hr />");
     ?>
 </body>
 </html>
