@@ -14,12 +14,14 @@
         echo "<hr />";
 
 
+
         echo("<h2>Variables</h2>");
         $characterName = "Andrew";
         $characterAge = 25;
         echo("<p>His name is $characterName</p> <br />");
         echo("He is $characterAge");
         echo("<hr />");
+
 
 
         echo("<h2>Types of Data</h2>");
@@ -36,6 +38,7 @@
         echo "<br />";
         echo $boolean;
         echo("<hr />");
+
 
 
         echo("<h2>Working with strings</h2>");
@@ -60,6 +63,48 @@
         echo str_replace("mo", "Panda", $example2);
         echo("<br />");
         echo substr($example2, 5);
+        echo("<br />");
+
+
+
+        echo("<hr />");
+        echo("<h2>Working with numbers</h2>");
+        echo 5 + 9;
+        echo("<br />");
+        echo 10 % 3;
+        echo("<br />");
+        echo (4+5) * 10;
+        echo("<br />");
+        $example = 10;
+        echo $example;
+        echo("<br />");
+        $example++;
+        echo $example;
+        echo("<br />");
+        $example--;
+        echo $example;
+        echo("<br />");
+        echo ("Common operations of number");
+        $example2 = -10.5;
+        echo("<br />");
+        echo $example2;
+        echo("<br />");
+        echo abs($example2);
+        echo("<br />");
+        echo pow($example2, 2);
+        echo("<br />");
+        echo sqrt(144);
+        echo("<br />");
+        echo max(100, 10);
+        echo("<br />");
+        echo min(100, 10);
+        echo("<br />");
+        echo round(3.2);
+        echo("<br />");
+        echo ceil(3.99);
+        echo("<br />");
+        echo floor(3.99);
+        echo("<br />");
     ?>
 </body>
 </html>
