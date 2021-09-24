@@ -149,6 +149,21 @@
         $vote = $asArray[$_POST["student"]];
         echo "<p>name student: $name, vote: $vote</p>";
         echo("<hr />");
+
+
+
+        echo "<h2>Functions</h2>";
+        echo("<br />");
+        function sayHi() {
+            echo "Hello User";
+        };
+        sayHi();
+        echo("<br />");
+        function sayName($name, $age) {
+            echo "Hello $name, you are $age";
+        };
+        sayName("James", 25);
+        echo("<hr />");
     ?>
 </body>
 </html>
