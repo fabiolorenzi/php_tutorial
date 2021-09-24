@@ -28,7 +28,6 @@
         $floatNumber = 20.5;
         $boolean = false;
         null;
-
         echo $string;
         echo "<br />";
         echo $wholeNumber;
@@ -37,6 +36,30 @@
         echo "<br />";
         echo $boolean;
         echo("<hr />");
+
+
+        echo("<h2>Working with strings</h2>");
+        $example = "Hello";
+        echo($example);
+        echo("<br />");
+        echo strtolower($example);
+        echo("<br />");
+        echo strtoupper($example);
+        echo("<br />");
+        echo strlen($example);
+        echo("<br />");
+        echo $example[1];
+        echo("<br />");
+        $example[0] = "J";
+        echo $example;
+        echo("<br />");
+
+        $example2 = "Kumo Team";
+        echo $example2;
+        echo("<br />");
+        echo str_replace("mo", "Panda", $example2);
+        echo("<br />");
+        echo substr($example2, 5);
     ?>
 </body>
 </html>
