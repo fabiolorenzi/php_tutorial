@@ -105,6 +105,7 @@
         echo("<br />");
         echo floor(3.99);
         echo("<br />");
+        echo("<hr />");
     ?>
 </body>
 </html>
