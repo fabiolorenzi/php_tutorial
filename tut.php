@@ -11,6 +11,15 @@
         echo("Hello World");
         echo "Hello World";
         echo("<h1>Hello everyone</h1>");
+        echo "<hr />";
+
+
+        echo("<h2>Variables</h2>");
+        $characterName = "Andrew";
+        $characterAge = 25;
+        echo("<p>His name is $characterName</p> <br />");
+        echo("He is $characterAge");
+        echo("<hr />");
     ?>
 </body>
 </html>
