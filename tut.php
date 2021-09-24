@@ -106,6 +106,23 @@
         echo floor(3.99);
         echo("<br />");
         echo("<hr />");
+
+
+
+        echo("<h2>Arrays</h2>");
+        $array = array("naem", 34, false, 45.6, "Helloooo");
+        echo $array;
+        echo("<br />");
+        echo $array[0];
+        echo("<br />");
+        $array[0] = "name";
+        echo $array[0];
+        echo("<br />");
+        $array[4] = 15;
+        echo $array[4];
+        echo("<br />");
+        echo count($array);
+        echo("<br />");
     ?>
 </body>
 </html>
