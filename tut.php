@@ -20,6 +20,23 @@
         echo("<p>His name is $characterName</p> <br />");
         echo("He is $characterAge");
         echo("<hr />");
+
+
+        echo("<h2>Types of Data</h2>");
+        $string = "This is a string";
+        $wholeNumber = 35;
+        $floatNumber = 20.5;
+        $boolean = false;
+        null;
+
+        echo $string;
+        echo "<br />";
+        echo $wholeNumber;
+        echo "<br />";
+        echo $floatNumber;
+        echo "<br />";
+        echo $boolean;
+        echo("<hr />");
     ?>
 </body>
 </html>
