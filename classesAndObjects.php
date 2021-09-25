@@ -8,6 +8,7 @@
 </head>
 <body>
     <?php
+        echo("<h2>Classes</h2>");
         class Book {
             var $title;
             var $author;
@@ -45,6 +46,7 @@
         echo("<br />");
         echo("<br />");
 
+
         class Magazine {
             var $title;
             var $writer;
@@ -60,6 +62,34 @@
 
         $mag1 = new Magazine("title1", "Jefferson", 4.99);
         echo $mag1->price;
+        echo "<hr />";
+
+
+
+        echo("<h2>Object Functions</h2>");
+        class Student {
+            var $name;
+            var $gpa;
+
+            function __construct($aName, $aGpa) {
+                $this->name = $aName;
+                $this->gpa = $aGpa;
+            }
+
+            function honours() {
+                if ($this->gpa >= 3.5) {
+                    return "true";
+                }
+                return "false";
+            }
+        };
+
+        $stud1 = new Student("James", 4.0);
+        $stud2 = new Student("Mary", 3.0);
+
+        echo $stud1->honours();
+        echo "<br />";
+        echo $stud2->honours();
     ?>
 </body>
 </html>
