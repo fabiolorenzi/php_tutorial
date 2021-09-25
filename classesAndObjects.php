@@ -130,6 +130,51 @@
         $serie2->setRating();
         echo $serie2->getRating();
         echo("<hr />");
+
+
+
+        echo("<h2>Inheritance classes</h2>");
+        echo "<br />";
+        class Chef {
+            function s1() {
+                echo "bla1";
+            }
+
+            function s2() {
+                echo "bla2";
+            }
+
+            function s3() {
+                echo "bla3";
+            }
+        }
+
+        class SuperChef extends Chef {
+            function s4() {
+                echo "bla4";
+            }
+
+            function s5() {
+                echo "bla5";
+            }
+
+            // this one to overwrite an inherited class
+            function s2() {
+                echo "special";
+            }
+        }
+
+        $chef1 = new Chef();
+        $chef2 = new SuperChef();
+        echo $chef1->s1();
+        echo "<br />";
+        echo $chef2->s1();
+        echo "<br />";
+        echo $chef1->s2();
+        echo "<br />";
+        echo $chef2->s2();
+        echo("<hr />");
+
     ?>
 </body>
 </html>
