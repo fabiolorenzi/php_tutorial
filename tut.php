@@ -205,6 +205,29 @@
         echo("types: > < >= <= == !=");
         echo("<hr />");
 
+
+
+        echo("<h2>Switch Statements</h2>");
+        $grade = "B";
+        switch($grade) {
+            case "A+":
+                echo "Great Job";
+                break;
+            case "B":
+                echo "Good Job";
+                break;
+            case "C":
+                echo "Not so Good Job";
+                break;
+            case "F":
+                echo "Bad Job";
+                break;
+            default:
+                echo "Invalid Grade";
+        };
+        echo("<br />");
+        echo("<hr />");
+
     ?>
 </body>
 </html>
