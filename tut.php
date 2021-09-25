@@ -255,6 +255,17 @@
             echo("<br />");
         };
         echo("<hr />");
+
+
+
+        echo("<h2>Comments</h2>");
+        echo("<p>To make comments you use // or /* way</p>");
+        // comment
+        /* lalalla
+        dfsjdkfjadslkfjaù
+        akjsdhdskjlav */
+        echo("<br />");
+        echo("<hr />");
     ?>
 </body>
 </html>
