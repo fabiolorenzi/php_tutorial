@@ -90,6 +90,46 @@
         echo $stud1->honours();
         echo "<br />";
         echo $stud2->honours();
+        echo("<hr />");
+
+
+
+        echo("<h2>Getters and Setters</h2>");
+        echo("<br />");
+        class Serie {
+            public $title;
+            private $rating;
+
+            // public == everyone can see it, use it and change it
+            // private == anycode outside this class can't access that data
+
+            function __construct($aTitle, $aRating) {
+                $this->title = $aTitle;
+                $this->rating = $aRating;
+            }
+
+            function getRating() {
+                return $this->rating;
+            }
+
+            function setRating() {
+                $this->rating = "dog";
+            }
+        }
+
+        $serie1 = new Serie("Rick and Morty", "gp13");
+        $serie2 = new Serie("Black Spot", "gp18");
+        // echo $serie1->rating; -------- this is not working because the request is from outside that class
+        echo $serie1->getRating(); // this is working because this function is inside that class
+        // var is a general one used for studying purpose and it would be better to use public and private instead
+        echo "<br />";
+        echo "<br />";
+
+        echo $serie2->getRating();
+        echo "<br />";
+        $serie2->setRating();
+        echo $serie2->getRating();
+        echo("<hr />");
     ?>
 </body>
 </html>
