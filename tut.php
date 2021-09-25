@@ -174,6 +174,21 @@
         $res = cube(4);
         echo $res;
         echo("<hr />");
+
+
+
+        echo("<h2>If Statement</h2>");
+        $isMale = true;
+        $isTall = true;
+        if ($isMale && $isTall) {
+            echo "you are a tall male";
+        } elseif ($isMale && !$isTall) {
+            echo "You are male but short";
+        } else {
+            echo "you are not a male";
+        };
+        echo("<br />");
+        echo("<hr />");
     ?>
 </body>
 </html>
