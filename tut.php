@@ -240,6 +240,21 @@
         echo("<br />");
         echo("<hr />");
 
+
+
+        echo("<h2>For Loops</h2>");
+        for ($i = 0; $i <= 5; $i++) {
+            echo $i;
+            echo("<br />");
+        };
+        echo("<br />");
+        echo("<p>from arrays</p>");
+        $numbers = array(2, 4, 6, 8, 10);
+        for ($i = 0; $i < count($numbers); $i++) {
+            echo $numbers[$i];
+            echo("<br />");
+        };
+        echo("<hr />");
     ?>
 </body>
 </html>
