@@ -189,6 +189,22 @@
         };
         echo("<br />");
         echo("<hr />");
+
+
+
+        echo("<h2>If Statement Comp</h2>");
+        function getMax($n1, $n2) {
+            if ($n1 >= $n2) {
+                return $n1;
+            } else {
+                return $n2;
+            };
+        };
+        echo getMax(5, 2);
+        echo("<br />");
+        echo("types: > < >= <= == !=");
+        echo("<hr />");
+
     ?>
 </body>
 </html>
