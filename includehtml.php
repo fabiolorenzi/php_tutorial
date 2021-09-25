@@ -11,6 +11,13 @@
         include "header.html";
     ?>
     <p>this is the body</p>
+
+    <?php
+        $title = "Including php file";
+        $text = "successfull";
+        $wordCount = 25;
+        include "article.php";
+    ?>
     <?php
         include "footer.html";
     ?>
