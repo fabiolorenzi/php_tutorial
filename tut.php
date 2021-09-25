@@ -228,6 +228,18 @@
         echo("<br />");
         echo("<hr />");
 
+
+
+        echo("<h2>While Loops</h2>");
+        $index = 0;
+        while ($index <= 10) {
+            echo $index;
+            echo("<br />");
+            $index++;
+        };
+        echo("<br />");
+        echo("<hr />");
+
     ?>
 </body>
 </html>
