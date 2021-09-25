@@ -18,6 +18,13 @@
         $wordCount = 25;
         include "article.php";
     ?>
+    <br />
+
+    <?php
+        include "includingFunc.php";
+        getName("Jacob");
+    ?>
+
     <?php
         include "footer.html";
     ?>
